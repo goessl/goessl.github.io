@@ -1,0 +1,53 @@
+site_name: goessl
+site_url: https://goessl.github.io/
+site_author: goessl
+site_description: Gössls main.
+
+repo_name: goessl/goessl.github.io
+repo_url: https://github.com/goessl/goessl.github.io
+
+copyright: Copyright &copy; 2025 Sebastian Gössl
+
+docs_dir: .
+
+exclude_docs: README.md
+
+nav:
+  - index.md
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/goessl/
+      name: goessl on Github
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/lordgoessl/
+      name: lordgoessl on Instagram
+
+plugins:
+  - search
+  - same-dir
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
